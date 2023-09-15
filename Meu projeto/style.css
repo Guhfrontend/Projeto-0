@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'bobsmade';
+    src: url(fonts/bobsmade_font_by_Bobsmade.ttf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --cor1:#E27396;
+    --cor2:#EFCFE3;
+    --cor3:#EAF2D7;
+    --cor4:#B3DEE2;
+    --font-destaque:'Oswald', sans-serif;
+    --font-crianca: 'bobsmade', cursive;
+    --font-padrao:Arial, Verdana, Helvetica, sans-serif
+
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-padrao);
+    line-height: 1.5em;
+}
+body {
+    background-color: var(--cor4);
+}
+header {
+    text-align: center;
+background-image: linear-gradient(to bottom, var(--cor1) 83%, var(--cor4));
+    color: var(--cor4);
+    font-family: var(--font-destaque);
+    padding: 40px;
+}
+header > h1 {
+    font-family: var(--font-crianca);
+    font-size: 3.5em;
+    padding: 20px;
+    text-decoration: underline;
+}
+header > p {
+    padding:  20px;
+    font-family: var(--font-destaque);
+}
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    width: auto;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 3px 3px black;
+}
+nav a {
+    color: var(--cor1);
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 5px;
+    font-weight: 600;
+}
+nav a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    transition: 0.3s;
+    padding: 6px;
+}
+main {
+    padding: 10px;
+    margin: auto;
+    width: auto;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3) 7%);
+    max-width: 1000px;
+    padding-bottom: 20px;
+    box-shadow: 0px 3px 3px black;
+}
+main h1 {
+    padding: 20px;
+    text-align: center;
+    color: var(--cor4);
+}
+main p {
+    text-indent: 24px;
+    padding: 10px;
+    font-weight: 500;
+}
+li {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 2px;
+    text-align: center;
+    margin: 0px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor4), var(--cor1), var(--cor3));
+}
+strong {
+    color: var(--cor1);
+}
+div {
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--cor3) ,var(--cor4) 40%, var(--cor1), var(--cor3));
+}
+img {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: auto;
+    display: block;
+    align-self: center 
+
+}
+footer {
+    padding: 3px 10px 3px 10px;
+    margin: auto;
+    color: white;
+    background-color: #222222;
+    width: auto;
+    max-width: 1000px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    box-shadow: 0px 3px 3px black;
+    margin-bottom: 10px;
+}
+footer > p {
+    font-family: var(--font-crianca);
+}
