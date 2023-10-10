@@ -144,7 +144,7 @@ strong {
 }
 div {
     padding: 20px;
-    background-image: linear-gradient(to right, var(--cor3) ,var(--cor4) 40%, var(--cor1), var(--cor3));
+    background-image: linear-gradient(to right, var(--cor3) ,var(--cor4)40% , var(--cor1), var(--cor3));
 }
 img {
     margin: auto;
